@@ -1,5 +1,7 @@
 require 'active_support/core_ext/integer/time'
 
+# # Avatar configuration
+Rails.application.config.action_controller.default_url_options={host: 'localhost' , port: 3000}
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -13,6 +15,7 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
+
 
   # Enable server timing
   config.server_timing = true
